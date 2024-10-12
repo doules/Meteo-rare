@@ -27,7 +27,7 @@
 
         // Загрузка 3D модели
         const loader = new THREE.GLTFLoader();
-        loader.load('https://doules.github.io/Meteo.rare/models/model.glb', function(gltf) {
+        loader.load('https://doules.github.io/Meteo-rare/models/model.glb', function(gltf) {
             model = gltf.scene; // Сохраняем модель
             model.scale.set(0.1, 0.1, 0.1); // Изменяем масштаб модели
             model.rotation.y = Math.PI; // Поворачиваем модель при необходимости
