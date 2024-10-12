@@ -29,7 +29,7 @@
         const loader = new THREE.GLTFLoader();
         loader.load('https://doules.github.io/Meteo.rare/models/model.glb', function(gltf) {
             model = gltf.scene; // Сохраняем модель
-            model.scale.set(0.001, 0.001, 0.001); // Изменяем масштаб модели
+            model.scale.set(0.1, 0.1, 0.1); // Изменяем масштаб модели
             model.rotation.y = Math.PI; // Поворачиваем модель при необходимости
             scene.add(model);
             animate(); // Запускаем анимацию после загрузки модели
@@ -51,7 +51,7 @@
         });
 
         // Установка начальной позиции камеры
-        camera.position.z = 100;
+        camera.position.z = 15;
     </script>
 </body>
 </html>
